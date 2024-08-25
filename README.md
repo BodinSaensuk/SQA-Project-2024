@@ -17,10 +17,10 @@ Repository นี้เป็นรายงานโปรเจค ครั�
 
 4. Prompt
 จากข้อ 1 – 3 ทำให้สามารถเขียน prompt ได้ 2 prompts ดังนี้
-1. “Use the prototype pattern to generate code in Python from the requirements below. 
+- 1. “Use the prototype pattern to generate code in Python from the requirements below. 
              1. Generate Pytest to test the code that you given code that have 100% branch coverage. 
              2. Use AAA method for write code.”
-2. “Use the singleton pattern to generate code in Python from the requirements below. 
+- 2. “Use the singleton pattern to generate code in Python from the requirements below. 
             1. Generate Pytest to test the code that you given code that have 100% branch coverage. 
             2. Use AAA method for write code. 
 

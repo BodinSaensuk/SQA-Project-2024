@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.java.ChatGPTFree.Singleton.round1.ChatGPT_R1_SingletonTest
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in com.java.ChatGPTFree.Singleton.round1.ChatGPT_R1_SingletonTest

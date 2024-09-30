@@ -1,5 +1,7 @@
 package com.java.GeminiPro.Prototype.round1;
 
+import com.java.GeminiPro.Prototype.round1.Code.ShapeCache_GeminiP_R1;
+import com.java.GeminiPro.Prototype.round1.Code.Shape_GeminiP_R1;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +12,7 @@ class GeminiP_R1_ShapeCacheTest {
 
     @BeforeEach
     void setUp() {
-        ShapeCache_GeminiP_R1.loadCache(); // เปลี่ยนไปใช้ชื่อคลาสที่ถูกต้อง
+        ShapeCache_GeminiP_R1.loadCache();
     }
 
     @Test
@@ -19,10 +21,10 @@ class GeminiP_R1_ShapeCacheTest {
         String shapeId = "1";
 
         // Act
-        ShapeCache_GeminiP_R1 clonedShape = ShapeCache_GeminiP_R1.getShape(shapeId); // เปลี่ยนไปใช้ชื่อคลาสที่ถูกต้อง
+        Shape_GeminiP_R1 clonedShape = ShapeCache_GeminiP_R1.getShape(shapeId);
 
         // Assert
-        assertEquals("Rectangle", clonedShape.getType()); // ตรวจสอบให้แน่ใจว่าใช้ getter
+        assertEquals("Rectangle", clonedShape.getType());
         assertNotSame(ShapeCache_GeminiP_R1.getShape(shapeId), clonedShape); // Ensure cloning
     }
 
@@ -32,10 +34,10 @@ class GeminiP_R1_ShapeCacheTest {
         String shapeId = "2";
 
         // Act
-        ShapeCache_GeminiP_R1 clonedShape = ShapeCache_GeminiP_R1.getShape(shapeId); // เปลี่ยนไปใช้ชื่อคลาสที่ถูกต้อง
+        Shape_GeminiP_R1 clonedShape = ShapeCache_GeminiP_R1.getShape(shapeId);
 
         // Assert
-        assertEquals("Square", clonedShape.getType()); // ตรวจสอบให้แน่ใจว่าใช้ getter
+        assertEquals("Square", clonedShape.getType());
         assertNotSame(ShapeCache_GeminiP_R1.getShape(shapeId), clonedShape); // Ensure cloning
     }
 

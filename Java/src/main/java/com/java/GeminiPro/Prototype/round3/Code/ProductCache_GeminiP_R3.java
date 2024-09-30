@@ -1,15 +1,6 @@
 package com.java.GeminiPro.Prototype.round3.Code;
 
-import java.util.HashMap;
-
-// Abstract Prototype (Interface)
-interface Prototype extends Cloneable {
-    Prototype clone();
-    void display();
-}
-
-// Concrete Prototype (Product)
-class ProductCache_GeminiP_R3 implements Prototype {
+public class ProductCache_GeminiP_R3 implements Prototype {
     private String name;
     private double price;
 
@@ -21,7 +12,7 @@ class ProductCache_GeminiP_R3 implements Prototype {
     @Override
     public Prototype clone() {
         try {
-            return (Prototype) super.clone(); // แคสต์ให้ถูกต้อง
+            return (Prototype) super.clone(); // Correctly cast
         } catch (CloneNotSupportedException e) {
             throw new RuntimeException("Cloning not supported.", e);
         }
@@ -31,22 +22,13 @@ class ProductCache_GeminiP_R3 implements Prototype {
     public void display() {
         System.out.println("Product: " + name + ", Price: $" + price);
     }
-}
-
-// Prototype Manager (ProductCache)
-class ProductCache {
-    private static HashMap<String, Prototype> productMap = new HashMap<>();
-
-    public static Prototype getProduct(String productId) {
-        Prototype cachedProduct = productMap.get(productId);
-        return cachedProduct.clone(); // เรียกใช้ clone
+    
+    // Getters for name and price
+    public String getName() {
+        return name;
     }
 
-    public static void loadCache() {
-        ProductCache_GeminiP_R3 laptop = new ProductCache_GeminiP_R3("Laptop", 1200.0);
-        productMap.put("1", laptop);
-
-        ProductCache_GeminiP_R3 phone = new ProductCache_GeminiP_R3("Smartphone", 800.0);
-        productMap.put("2", phone);
+    public double getPrice() {
+        return price;
     }
 }

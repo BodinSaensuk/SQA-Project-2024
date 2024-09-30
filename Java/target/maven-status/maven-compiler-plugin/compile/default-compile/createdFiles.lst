@@ -39,6 +39,7 @@ com\java\GeminiPro\Prototype\round2\Code\ShapeCodeGenerator_GeminiP_R2.class
 com\java\GeminiFlash\Prototype\round1\Code\Circle_GeminiF_R1.class
 com\java\ChatGPTFree\Prototype\round3\Code\Shape_Chat_R3.class
 com\java\GeminiFlash\Singleton\round2\GeminiF_R2_Singleton.class
+com\java\GeminiPro\Prototype\round1\Code\Shape_GeminiP_R1.class
 com\java\GeminiPro\Prototype\round3\Code\ProductCache.class
 com\java\GeminiPro\Singleton\round1\GeminiP_R1_Singleton.class
 com\java\GeminiPro\Prototype\round2\Code\Shape_GeminiP_R2.class

@@ -2,6 +2,9 @@ package com.java.Github_Copilot.Prototype.round1;
 
 // BookTest.java
 import org.junit.jupiter.api.Test;
+
+import com.java.Github_Copilot.Prototype.round1.Code.Book_Copilot_R1;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Copilot_R1_BookTest {

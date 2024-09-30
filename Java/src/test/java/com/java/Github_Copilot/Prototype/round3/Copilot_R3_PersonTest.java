@@ -1,6 +1,9 @@
 package com.java.Github_Copilot.Prototype.round3;
 
 import org.junit.jupiter.api.Test;
+
+import com.java.GeminiFlash.Prototype.round3.Code.Person_GeminiF_R3;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Copilot_R3_PersonTest {
